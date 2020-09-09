@@ -8,7 +8,7 @@ module.exports=function(req,res,next){
 
     //check if no token
     if(!token){
-        return res.send(401).json({msg: "No token, authorization denied."})
+        return res.sendStatus(401).json({msg: "No token, authorization denied."})
     }
     //verify it token exists
     try{
