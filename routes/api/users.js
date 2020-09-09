@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
-const gravatar= require("gravatar");
-const User= require("../../models/Users")
-const bcrypt = require("bcryptjs")
+const gravatar = require("gravatar");
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcryptjs");
+const config = require("config");
+const User = require("../../models/Users");
+
 
 //@route    POST api/users
 //@desc     Register user 
@@ -21,44 +24,53 @@ router.post("/", [
         return res.status(400).json({ errors: errors.array() });
     }
 
-    const {name,email,password} = req.body;
+    const { name, email, password } = req.body;
 
-    try{
+    try {
 
-    //see if the user exists 
-    let user =await User.findOne({email});
-    if(user){
-        res.status(400).json({errors: [{msg: "User already exists"}]});
+        //see if the user exists 
+        let user = await User.findOne({ email });
+        if (user) {
+            res.status(400).json({ errors: [{ msg: "User already exists" }] });
+        }
+        //get user  gravatar
+        const avatar = gravatar.url(email, {
+            s: "200",
+            r: "pg",
+            d: "mm"
+        })
+        //create an instance of a user 
+        user = new User({
+            name,
+            email,
+            avatar,
+            password
+
+        })
+
+        //encnrypt passowrd
+        const salt = await bcrypt.genSalt(10);
+
+        user.password = await bcrypt.hash(password, salt);
+
+        await user.save();
+        //return jsonwebtoken
+        const payload = {
+            user: {
+                id: user.id
+            }
+
+        }
+        jwt.sign(payload, config.get('jwtSecret'), {
+            expiresIn: 36000
+        }, (err, token) => {
+            if (err) throw err
+            res.json({token });
+        });
     }
-    //get user  gravatar
-    const avatar= gravatar.url(email,{
-        s: "200",
-        r: "pg",
-        d:"mm"
-    })
-    //create an instance of a user 
-    user=new User({
-        name,
-        email,
-        avatar,
-        password
-
-    })
-
-    //encnrypt passowrd
-    const salt  = await bcrypt.genSalt(10);
-
-    user.password= await bcrypt.hash(password,salt);
-    
-    await user.save();
-    //return jsonwebtoken
-
-
-    res.send('User Registered');
-    }
-    catch(err){
+    catch (err) {
         console.error(err.message);
-        res.status(500).send("Server error");       
+        res.status(500).send("Server error");
     }
 
 }
