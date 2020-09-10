@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom"
  const Navbar = () => {
     return (
-        <nav className="navbar navbar-inverse">
+        <nav className="navbar bg-dark">
         <h1>
           <Link to="/"><i className="fas fa-code"></i> Connexion</Link>
         </h1>
