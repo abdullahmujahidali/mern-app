@@ -19,6 +19,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
        <span className="hide-sm">Dashboard</span>
       </Link></li>
     
+      <li><Link to="/Soul">
+        Soul 
+      </Link></li>
       <li><Link onClick={logout} to="#!"> 
       <i className="fas fa-sign-out-alt"></i>{' '}
       <span className="hide-sm">Logout</span></Link></li>
@@ -30,6 +33,10 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
      <li><Link to="/profiles">
         Developers
       </Link></li>
+      <li><Link to="/Soul">
+        Soul 
+      </Link></li>
+     
      <li><Link to="/register">Register</Link></li>
       <li><Link to="/login">Login</Link></li>
     </ul>
