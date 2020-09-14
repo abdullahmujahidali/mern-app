@@ -5,6 +5,8 @@ const config=require("config");
 const auth = require("../../middleware/auth");
 const User = require("../../models/Users");
 const Profile = require("../../models/Profile");
+const Post = require("../../models/Post");
+
 const { check, validationResult } = require("express-validator");
 
 //@route    GET api/profile/me
@@ -137,6 +139,7 @@ router.get("/user/:user_id", async (req, res) => {
 router.delete("/", auth, async (req, res) => {
     try {
         //@todo -remove users posts
+        await Post.deleteMany({user:req.user.id});
         //remove profile
         await Profile.findOneAndRemove({ user: req.user.id });
         //remove user 
@@ -286,10 +289,9 @@ router.delete("/education/:edu_id", auth, async (req, res) => {
         const profile= await Profile.findOne({user: req.user.id});
 
         // Get remove index  
+        
 
-        const removeIndex= profile.education
-        .map(item =>item.id)
-        .indexOf(req.params.edu_id);
+        const removeIndex= profile.education.map(item =>item.id).indexOf(req.params.edu_id);
 
         profile.education.splice(removeIndex,1);
         await profile.save();
