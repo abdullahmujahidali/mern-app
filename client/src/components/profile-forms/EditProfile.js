@@ -17,7 +17,7 @@ const EditProfile = ({profile:{profile,loading},createProfile,getCurrentProfile,
         linkedin: "",
         youtube: "",
         instagram: "",
-    })
+    },[loading,getCurrentProfile])
     const [displaySocialInputs, toggleSocialInput] = useState(false);
     useEffect(()=>{
         getCurrentProfile();

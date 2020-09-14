@@ -10,7 +10,7 @@ import Experience from "./Experience"
 const Dashboard = ({getCurrentProfile,deleteAccount,auth:{user},profile:{profile,loading}}) => {
    useEffect(()=>{
        getCurrentProfile();
-   });
+   },[getCurrentProfile]);
     
     return loading && profile == null ? <Spinner /> : <Fragment>
     <h1 className="large text-primary">Dashboard</h1>
