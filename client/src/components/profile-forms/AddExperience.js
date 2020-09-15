@@ -28,7 +28,7 @@ const AddExperience = ({ addExperience, history }) => {
         positions that you have had in the past
       </p>
             <small>* = required field</small>
-            <form class="form" onSubmit={e => {
+            <form className="form" onSubmit={e => {
                 e.preventDefault();
                 addExperience(formData, history);
             }}

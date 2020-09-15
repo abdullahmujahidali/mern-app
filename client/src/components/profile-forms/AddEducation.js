@@ -27,7 +27,7 @@ const AddEducation = ({ addEducation, history }) => {
                 <i className="fas fa-code-branch"></i> Add any school or bootcamp that you have attended
       </p>
             <small>* = required field</small>
-            <form class="form" onSubmit={e => {
+            <form className="form" onSubmit={e => {
                 e.preventDefault();
                 addEducation(formData, history);
             }}
