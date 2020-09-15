@@ -2,57 +2,57 @@ import React from "react";
 
 const Register = () =>{
  return(
-    <div class="profile-grid my-1 ">
-    <div class="profile-top bg-dark p-2">
+    <div className="profile-grid my-1 ">
+    <div className="profile-top bg-dark p-2">
           <img
-            class="round-img my-1"
+            className="round-img my-1"
             src="https://i.ibb.co/P9ZyLRy/abd.png"
             alt="my"
           />
-          <h1 class="large">Abdullah Mujahid Ali</h1>
-          <p class="lead">Developer at deSwot</p>
+          <h1 className="large">Abdullah Mujahid Ali</h1>
+          <p className="lead">Developer at deSwot</p>
           <p>Lahore, PK</p>
-          <div class="icons my-1">
+          <div className="icons my-1">
             <a href="/" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-globe fa-2x"></i>
+              <i className="fas fa-globe fa-2x"></i>
             </a>
             <a href="https://twitter.com/abdulladgaf" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-twitter fa-2x"></i>
+              <i className="fab fa-twitter fa-2x"></i>
             </a>
             <a href="https://www.facebook.com/m.abdullahmujahid" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-facebook fa-2x"></i>
+              <i className="fab fa-facebook fa-2x"></i>
             </a>
             <a href="https://www.linkedin.com/in/abdullah-mujahid-211849186/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-linkedin fa-2x"></i>
+              <i className="fab fa-linkedin fa-2x"></i>
             </a>
             <a href="https://www.instagram.com/abdullahmujahidali/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-instagram fa-2x"></i>
+              <i className="fab fa-instagram fa-2x"></i>
             </a>
           </div>
         </div>
-        <div class="profile-about bg-dark p-2">
-          <h2 class="text-primary">Abdullah's Bio</h2>
+        <div className="profile-about bg-dark p-2">
+          <h2 className="text-primary">Abdullah's Bio</h2>
           <p>
           I have a passion for learning and sharing my knowledge with others as publicly as possible. 
 If you found value in something I have created Feel free to reach out in case you want to just get in touch also.
 I am trying to become a full-stack developer. I am working at deSwot which provide web-services and moreover I am currently working on a project that is entitled with the company name "deSwot" which basically going to provide educational service.
-Other than that I am a writer. I have written books on Wattpad 😹
+Other than that I am a writer. I have written books on Wattpad
 
           </p>
-          <div class="line"></div>
-          <h2 class="text-primary">Skill Set</h2>
-          <div class="skills">
-            <div class="p-1"><i class="fa fa-check"></i> JavaScript</div>
-            <div class="p-1"><i class="fa fa-check"></i> Python</div>
-            <div class="p-1"><i class="fa fa-check"></i> Matlab</div>
-            <div class="p-1"><i class="fa fa-check"></i> JAVA</div>
-            <div class="p-1"><i class="fa fa-check"></i> PHP</div>
+          <div className="line"></div>
+          <h2 className="text-primary">Skill Set</h2>
+          <div className="skills">
+            <div className="p-1"><i className="fa fa-check"></i> JavaScript</div>
+            <div className="p-1"><i className="fa fa-check"></i> Python</div>
+            <div className="p-1"><i className="fa fa-check"></i> Matlab</div>
+            <div className="p-1"><i className="fa fa-check"></i> JAVA</div>
+            <div className="p-1"><i className="fa fa-check"></i> PHP</div>
           </div>
         </div>
-        <div class="profile-exp bg-dark p-2">
-          <h2 class="text-primary">Experience</h2>
+        <div className="profile-exp bg-dark p-2">
+          <h2 className="text-primary">Experience</h2>
           <div>
-            <h3 class="text-light">Developer at deSwot</h3>
+            <h3 className="text-light">Developer at deSwot</h3>
             <p>Oct 2019 - Current</p>
             <p><strong>Position: </strong>Full-Stack Developer</p>
             <p>
@@ -62,7 +62,7 @@ Other than that I am a writer. I have written books on Wattpad 😹
           </div>
          
           <div>
-            <h3 class="text-light">Freelancer</h3>
+            <h3 className="text-light">Freelancer</h3>
             <p>Oct 2017 - Current</p>
             <p><strong>Position: </strong>Freelancer</p>
             <p>
@@ -72,7 +72,7 @@ Other than that I am a writer. I have written books on Wattpad 😹
             </p>
           </div>
           <div>
-            <h3 class="text-light">Chegg</h3>
+            <h3 className="text-light">Chegg</h3>
             <p>June 2018 - March 2019</p>
             <p><strong>Position: </strong>Solution Expert</p>
             <p>
@@ -83,7 +83,7 @@ Other than that I am a writer. I have written books on Wattpad 😹
             </p>
           </div>
           <div>
-            <h3 class="text-light">CourseHero</h3>
+            <h3 className="text-light">CourseHero</h3>
             <p>March 2019 - Current</p>
             <p><strong>Position: </strong>Solution Expert</p>
             <p>
@@ -94,8 +94,8 @@ Other than that I am a writer. I have written books on Wattpad 😹
           </div>
 
         </div>
-        <div class="profile-edu bg-dark p-2">
-          <h2 class="text-primary">Education</h2>
+        <div className="profile-edu bg-dark p-2">
+          <h2 className="text-primary">Education</h2>
           <div>
             <h3>Cambridge University</h3>
             <p>Sep 2013 - June 2015</p>
