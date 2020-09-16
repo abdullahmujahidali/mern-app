@@ -9,12 +9,15 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-    },
+  },
   "author": "Abdullah Mujahid",
   "license": "MIT",
   "dependencies": {
+    "@babel/polyfill": "^7.11.5",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",
+    "core-js": "^2.6.11",
+    "express": "^4.17.1",
     "express-validator": "^6.6.1",
     "gravatar": "^1.8.1",
     "jsonwebtoken": "^8.5.1",
