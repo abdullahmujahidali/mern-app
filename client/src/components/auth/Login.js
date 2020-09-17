@@ -23,7 +23,7 @@ const Login = ({login, isAuthenticated}) => {
     }
     return (
         <Fragment>
-            <h1 className="large text-primary">Sign In</h1>
+            <h1 className="large text-gr">Sign In</h1>
             <p className="lead"><i className="fas fa-user"></i> Sign Into Your Account</p>
             <form className="form" onSubmit={e => onSubmit(e)}>
                     <input type="email" placeholder="Email Address" name="email" value={email}

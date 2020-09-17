@@ -1,10 +1,14 @@
   /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
+  --primary-color: #ffffff;
+  --local-color:#f4f4f4;
+  --dark-color: #000000;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
+  --alter-color: #000ddd;
   --success-color: #28a745;
+  --gr-color: #333333;
+  
 }
 
 * {
@@ -70,6 +74,9 @@ img {
   color: var(--primary-color);
 }
 
+.text-custom {
+  color: var(--gr-color);
+}
 .text-dark {
   color: var(--dark-color);
 }
@@ -128,7 +135,7 @@ img {
 
 .btn {
   display: inline-block;
-  background: var(--light-color);
+  background: var(--danger-color);
   color: #333;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
@@ -158,13 +165,17 @@ img {
 
 .btn-primary,
 .bg-primary,
-.badge-primary,
 .alert-primary {
-  background: var(--primary-color);
+  background: var(--gr-color);
   color: #fff;
 }
+.badge-primary{
+  background: var(--primary-color);
+  color: #28a745;
+}
 
-.btn-light,
+
+
 .bg-light,
 .badge-light,
 .alert-light {
@@ -172,12 +183,21 @@ img {
   color: #333;
 }
 
+.btn-light{
+  background: var(--gr-color);
+  color: #ffffff;
+}
+
+
 .btn-dark,
 .bg-dark,
-.badge-dark,
 .alert-dark {
   background: var(--dark-color);
   color: #fff;
+}
+.badge-dark{
+  background: var(--primary-color);
+  color: #000000;
 }
 
 .btn-danger,
@@ -197,7 +217,6 @@ img {
 }
 
 .btn-white,
-.bg-white,
 .badge-white,
 .alert-white {
   background: #fff;
@@ -205,6 +224,11 @@ img {
   border: #ccc solid 1px;
 }
 
+.bg-white{
+  background: #000000;
+  color: #fff
+ 
+}
 .btn:hover {
   opacity: 0.8;
 }
@@ -323,7 +347,7 @@ button {
 }
 
 .navbar a:hover {
-  color: var(--primary-color);
+  color: var(--local-color);
 }
 
 .navbar .welcome span {
@@ -475,7 +499,7 @@ button {
 }
 
 .post .comment-count {
-  background: var(--light-color);
+  background: var(--gr-color);
   color: var(--primary-color);
   padding: 0.1rem 0.2rem;
   border-radius: 5px;
