@@ -1,5 +1,9 @@
 # mern-app
 
+LIVE DEMO 
+##
+https://connexionmern.herokuapp.com/
+##
 --- KEY FEATURES ----
 ####
 Building an extensive backend API with Node.js & Express
