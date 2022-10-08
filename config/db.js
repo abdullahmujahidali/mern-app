@@ -16,6 +16,7 @@ const connectDB= async()=>{
         console.log("Mongoose connected");
     }
     catch (err){
+        console.log('finding error: ', err.message);
         console.log(err.message);
         //Exit process with failure
         process.exit(1);
