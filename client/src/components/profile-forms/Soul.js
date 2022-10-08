@@ -10,7 +10,7 @@ const Register = () =>{
             alt="my"
           />
           <h1 className="large">Abdullah Mujahid Ali</h1>
-          <p className="lead">Developer at deSwot</p>
+          <p className="lead">Software Engineer at Carte Blanche Innovation Integrated</p>
           <p>Lahore, PK</p>
           <div className="icons my-1">
             <a href="/" target="_blank" rel="noopener noreferrer">
@@ -44,20 +44,42 @@ Other than that I am a writer. I have written books on Wattpad
           <div className="skills">
             <div className="p-1"><i className="fa fa-check"></i> JavaScript</div>
             <div className="p-1"><i className="fa fa-check"></i> Python</div>
-            <div className="p-1"><i className="fa fa-check"></i> Matlab</div>
+            <div className="p-1"><i className="fa fa-check"></i> Django</div>
             <div className="p-1"><i className="fa fa-check"></i> JAVA</div>
-            <div className="p-1"><i className="fa fa-check"></i> PHP</div>
+            <div className="p-1"><i className="fa fa-check"></i> React</div>
           </div>
         </div>
         <div className="profile-exp bg-dark p-2">
           <h2 className="text-primary">Experience</h2>
           <div>
-            <h3 className="text-light">Developer at deSwot</h3>
-            <p>Oct 2019 - Current</p>
+            <h3 className="text-light">Software Engineer at Carte Blanche</h3>
+            <p>Oct 2021 - Current</p>
             <p><strong>Position: </strong>Full-Stack Developer</p>
             <p>
-              <strong>Description: </strong>deSwot is a Lebanon based company which is on its horizon soon it will be start operating their services.
-              As a developer at deSwot my job is to handle the backend queries of the web application.
+              <strong>Description: </strong>To this date, I am working as a full-stack software engineer. The key responsibilities include(
+<ul>
+<li>
+    Feature research
+  </li>  
+<li>
+Identifying problem scenarios*
+  </li>  
+<li>
+Writing user personas and writing user stories* Designing wireframes*
+  </li>  
+</ul>
+
+& Backend Development` Database design*
+Writing API’s and unit tests.(
+Integration of 3rd party such as Stripe* & Frontend Development`
+Building frontend UI and writing its functionalitites.( Writing functional and unit tests*
+Integration of 3rd parties such as Mixpanel, Stripe*
+& Project Management`
+Managing tasks at Clickup documenting features, assigning tasks to team mates and task estimation etc*
+& Dev Ops`
+Monitoring pull request and deployment on services such as Amazon AWS, Github, Docker.
+
+
             </p>
           </div>
          

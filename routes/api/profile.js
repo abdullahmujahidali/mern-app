@@ -107,7 +107,6 @@ router.get("/", async (req, res) => {
         res.json(profiles)
     }
     catch (err) {
-        console.log(err.message);
         res.status(500).send("Server Error");
     }
 });
@@ -125,7 +124,6 @@ router.get("/user/:user_id", async (req, res) => {
         res.json(profile)
     }
     catch (err) {
-        console.log(err.message);
         if (err.kind == 'ObjectId') {
             return res.status(400).json({ msg: "Profile not found" })
         }
@@ -147,7 +145,6 @@ router.delete("/", auth, async (req, res) => {
         res.json({ msg: "User deleted" });
     }
     catch (err) {
-        console.log(err.message);
         res.status(500).send("Server Error");
     }
 });
