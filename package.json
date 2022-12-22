@@ -21,7 +21,7 @@
     "express-validator": "^6.6.1",
     "gravatar": "^1.8.1",
     "heroku": "^7.64.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.10.3",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5",
